@@ -9,6 +9,8 @@ header {
     color: white;
     text-align: center;
     padding: 1rem;
+    position: sticky;
+    top: 0;
 }
 
 nav {
@@ -46,6 +48,7 @@ main {
     gap: 20px;
     padding: 20px;
 }
+
 /* 
 grid-template-columns: 1fr 1fr;
 It will create 2 columns, each taking 50% of the remaining width.
@@ -59,7 +62,7 @@ section {
     background-color: white;
     padding: 15px;
     border-radius: 6px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 table {
@@ -69,11 +72,14 @@ table {
     display: block;
 }
 
-table, th, td {
+table,
+th,
+td {
     border: 1px solid #ddd;
 }
 
-th, td {
+th,
+td {
     padding: 10px;
     text-align: left;
 }
@@ -102,10 +108,12 @@ footer {
     text-align: center;
     padding: 1rem;
     margin-top: 20px;
+    position: sticky;
+    bottom: 0;
 }
 
 /* Responsive Adjustments */
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
     nav ul {
         flex-direction: column;
         align-items: center;
@@ -116,7 +124,8 @@ footer {
         padding: 10px;
     }
 
-    header, footer {
+    header,
+    footer {
         padding: 0.5rem;
     }
-} */
+}
